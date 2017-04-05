@@ -1,0 +1,21 @@
+{
+  "name": "tales-new",
+  "authors": [
+    "Me"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular-ui-router": "^0.4.2"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

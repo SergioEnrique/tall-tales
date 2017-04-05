@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="talesApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Tall Tales</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body ng-controller="mainCtrl">
+
+	<div ui-view></div>
+
+	<!-- Other dependencies -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- Angular dependencies -->
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+	<!-- Angular App -->
+	<script src="app.js"></script>
+	<script src="controllers/main.js"></script>
+	<script src="controllers/firstLesson.js"></script>
+
+</body>
+</html>
