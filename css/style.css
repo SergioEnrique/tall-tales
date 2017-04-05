@@ -7,7 +7,22 @@
     font-weight: bold;
     position: relative;
     margin: 0 7px;
-    top: 20px;
-    padding-top: 5px;
+    top: 26px;
+    padding: 5px 26px;
     cursor: pointer;
+}
+
+.miblanco{
+	color: red;
+    position: absolute;
+    margin-left: 7px;
+}
+
+.word-selector{
+	cursor: pointer;
+	line-height: 17px;
+}
+
+.word-selector:hover{
+	font-weight: bold;
 }

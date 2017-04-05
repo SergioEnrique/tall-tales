@@ -1,6 +1,6 @@
 <h1>Tall Tales</h1>
 
-<p class="ejercicio">One day, the mail carrier visited my <span ng-click="selectType('place')" data-toggle="modal" data-target="#myModal" class="blanco">A PLACE</span>. She was carrying a <span ng-click="selectType('adjectives')" data-toggle="modal" data-target="#myModal" class="blanco">ADJECTIVE</span> pile of <span ng-click="selectType('plural noun')" data-toggle="modal" data-target="#myModal" class="blanco">PLURAL NOUN</span> for me. When I saw it, I shouted “That is so <span ng-click="selectType('adjectives')" data-toggle="modal" data-target="#myModal" class="blanco">ADJECTIVE</span>!” The mail carrier smiled <span ng-click="selectType('adverb')" data-toggle="modal" data-target="#myModal" class="blanco">ADVERB</span> at me. As soon as she left, I ran upstairs to tell my <span ng-click="selectType('living things')" data-toggle="modal" data-target="#myModal" class="blanco">A LIVING THING</span>.
+<p class="ejercicio">One day, the mail carrier visited my <span class="miblanco">{{blanco.a}}</span><span ng-click="selectType('a', 'place')" data-toggle="modal" data-target="#myModal" class="blanco">A PLACE</span>. She was carrying a <span class="miblanco">{{blanco.b}}</span><span ng-click="selectType('b', 'adjectives')" data-toggle="modal" data-target="#myModal" class="blanco">ADJECTIVE</span> pile of <span class="miblanco">{{blanco.c}}</span><span ng-click="selectType('c', 'plural noun')" data-toggle="modal" data-target="#myModal" class="blanco">PLURAL NOUN</span> for me. When I saw it, I shouted “That is so <span class="miblanco">{{blanco.d}}</span><span ng-click="selectType('d', 'adjectives')" data-toggle="modal" data-target="#myModal" class="blanco">ADJECTIVE</span>!” The mail carrier smiled <span class="miblanco">{{blanco.e}}</span><span ng-click="selectType('e', 'adverb')" data-toggle="modal" data-target="#myModal" class="blanco">ADVERB</span> at me. As soon as she left, I ran upstairs to tell my <span class="miblanco">{{blanco.f}}</span><span ng-click="selectType('f', 'living things')" data-toggle="modal" data-target="#myModal" class="blanco">A LIVING THING</span>.
 </p>
 
 
@@ -13,7 +13,7 @@
 			</div>
 			<div class="modal-body">
 				<ul>
-					<li ng-repeat="word in selectedWords">{{word.word}}</li>
+					<li class="word-selector" ng-repeat="word in selectedWords" ng-click="selectWord(word.word)" data-dismiss="modal">{{word.word}}</li>
 				</ul>
 			</div>
 		</div>
