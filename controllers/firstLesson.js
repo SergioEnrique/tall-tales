@@ -8,9 +8,14 @@ angular.module('talesApp.firstLesson', ['ui.router'])
 	})
 }])
 
-.controller('firstLessonCtrl', ['$scope', '$state',
-function (                       $scope,   $state) {
+.controller('firstLessonCtrl', ['$scope', '$http',
+function (                       $scope,   $http) {
 
-	console.log('Esto funciona')
+	var words = []
+
+	$http.get('data/words.json')
+	.then(function (res) {
+		words = res.data
+	})
 
 }])

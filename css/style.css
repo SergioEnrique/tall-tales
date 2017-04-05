@@ -1,0 +1,13 @@
+.ejercicio{
+	line-height: 54px;
+}
+
+.blanco{
+	border-top: 1px solid black;
+    font-weight: bold;
+    position: relative;
+    margin: 0 7px;
+    top: 20px;
+    padding-top: 5px;
+    cursor: pointer;
+}

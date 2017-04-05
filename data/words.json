@@ -1,0 +1,267 @@
+[
+    {
+        "type": "place",
+        "words": [
+            {
+                "pk": 1,
+                "word": "castle yard"
+            },
+            {
+                "pk": 2,
+                "word": "prison"
+            },
+            {
+                "pk": 3,
+                "word": "cornfield"
+            },
+            {
+                "pk": 4,
+                "word": "garbage pile"
+            },
+            {
+                "pk": 5,
+                "word": "chamber"
+            },
+            {
+                "pk": 6,
+                "word": "rooftop"
+            },
+            {
+                "pk": 7,
+                "word": "bathroom"
+            },
+            {
+                "pk": 8,
+                "word": "cafeteria"
+            },
+            {
+                "pk": 9,
+                "word": "seashore"
+            },
+            {
+                "pk": 10,
+                "word": "auction house"
+            },
+            {
+                "pk": 11,
+                "word": "toy store"
+            },
+            {
+                "pk": 12,
+                "word": "pasture"
+            }
+        ]
+    },
+    {
+        "type": "adjectives",
+        "words": [
+            {
+                "pk": 1,
+                "word": "hysterical"
+            },
+            {
+                "pk": 2,
+                "word": "spidery"
+            },
+            {
+                "pk": 3,
+                "word": "sleepless"
+            },
+            {
+                "pk": 4,
+                "word": "fractured"
+            },
+            {
+                "pk": 5,
+                "word": "benighted"
+            },
+            {
+                "pk": 6,
+                "word": "proven"
+            },
+            {
+                "pk": 7,
+                "word": "barbed"
+            },
+            {
+                "pk": 8,
+                "word": "sacrificed"
+            },
+            {
+                "pk": 9,
+                "word": "disreputable"
+            },
+            {
+                "pk": 10,
+                "word": "rancid"
+            },
+            {
+                "pk": 11,
+                "word": "unspoken"
+            },
+            {
+                "pk": 12,
+                "word": "stunned"
+            }
+        ]
+    },
+    {
+        "type": "plural noun",
+        "words": [
+            {
+                "pk": 1,
+                "word": "apples"
+            },
+            {
+                "pk": 2,
+                "word": "balls"
+            },
+            {
+                "pk": 3,
+                "word": "frogs"
+            },
+            {
+                "pk": 4,
+                "word": "plates"
+            },
+            {
+                "pk": 5,
+                "word": "books"
+            },
+            {
+                "pk": 6,
+                "word": "tress"
+            },
+            {
+                "pk": 7,
+                "word": "cats"
+            },
+            {
+                "pk": 8,
+                "word": "turtles"
+            },
+            {
+                "pk": 9,
+                "word": "disreputable"
+            },
+            {
+                "pk": 10,
+                "word": "pencils"
+            },
+            {
+                "pk": 11,
+                "word": "keys"
+            },
+            {
+                "pk": 12,
+                "word": "tomatoes"
+            }
+        ]
+    },
+    {
+        "type": "adverb",
+        "words": [
+            {
+                "pk": 1,
+                "word": "badly"
+            },
+            {
+                "pk": 2,
+                "word": "coyly"
+            },
+            {
+                "pk": 3,
+                "word": "daily"
+            },
+            {
+                "pk": 4,
+                "word": "duely"
+            },
+            {
+                "pk": 5,
+                "word": "fully"
+            },
+            {
+                "pk": 6,
+                "word": "lower"
+            },
+            {
+                "pk": 7,
+                "word": "madly"
+            },
+            {
+                "pk": 8,
+                "word": "twice"
+            },
+            {
+                "pk": 9,
+                "word": "openly"
+            },
+            {
+                "pk": 10,
+                "word": "agedly"
+            },
+            {
+                "pk": 11,
+                "word": "coldly"
+            },
+            {
+                "pk": 12,
+                "word": "dearly"
+            }
+        ]
+    },
+    {
+        "type": "living things",
+        "words": [
+            {
+                "pk": 1,
+                "word": "angel"
+            },
+            {
+                "pk": 2,
+                "word": "banshee"
+            },
+            {
+                "pk": 3,
+                "word": "bogey man"
+            },
+            {
+                "pk": 4,
+                "word": "cyclops"
+            },
+            {
+                "pk": 5,
+                "word": "batman"
+            },
+            {
+                "pk": 6,
+                "word": "fairy"
+            },
+            {
+                "pk": 7,
+                "word": "ghost"
+            },
+            {
+                "pk": 8,
+                "word": "Godzilla"
+            },
+            {
+                "pk": 9,
+                "word": "mermaid"
+            },
+            {
+                "pk": 10,
+                "word": "zombie"
+            },
+            {
+                "pk": 11,
+                "word": "rain bird"
+            },
+            {
+                "pk": 12,
+                "word": "werewolf"
+            }
+        ]
+    }
+]
