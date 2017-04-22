@@ -1,7 +1,11 @@
 body {
     overflow-x: hidden;
     background-image: url("../img/bgpattern.png");
- }
+}
+
+h1{
+    color: #008790;
+}
 
 /* Toggle Styles */
 
@@ -139,17 +143,22 @@ body {
 }
 
 .ejercicio{
-	line-height: 54px;
+    line-height: 69px;
+    font-size: 20px;
+    color: #505050;
 }
 
 .blanco{
-	border-top: 1px solid black;
-    font-weight: bold;
+    border-bottom: 1px solid #505050;
     position: relative;
-    margin: 0 7px;
-    top: 26px;
+    margin: 0px 7px;
+    top: 20px;
     padding: 5px 26px;
     cursor: pointer;
+    color: #FF9800;
+    font-size: 13px;
+    display: inline-block;
+    height: 28px;
 }
 
 .miblanco{
