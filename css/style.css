@@ -181,7 +181,7 @@ h1{
 }
 
 .container-game {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(243, 243, 243);
     margin: -20px 30px;
     padding: 30px;
 }
@@ -191,6 +191,9 @@ h1{
     margin: 19px;
 }
 
+.modal-content{
+    border-radius: 0;
+}
 
 .btn-default {
     color: #009597;
@@ -223,4 +226,51 @@ h1{
     width: 36px;
     padding: 9px;
     line-height: 0;
+}
+
+.cuadro-respuesta{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border: 2px dashed #bdbdbd;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.cuadro-respuesta-verde{
+    background-color: #cef5d1;
+    border: 2px dashed #03c500;
+}
+
+.cuadro-respuesta-imagen{
+    width: 97%;
+    margin-top: -37px;
+}
+
+.cuadro-eleccion{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #098f98;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 19px 19px 0 19px;
+    cursor: pointer;
+}
+
+.texto-eleccion{
+    display: block;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.text-respuesta{
+    color: #00c300;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    line-height: 16px;
+    position: relative;
+    margin-top: -19px;
+    background: #f3f3f3;
 }

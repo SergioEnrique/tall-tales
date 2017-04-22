@@ -8,43 +8,100 @@
 	One day, the mail carrier visited my 
 
 	<span ng-click="selectType('a', 'place')" data-toggle="modal" data-target="#myModal" class="blanco">
-		<span class="miblanco text-center">{{blanco.a}}</span>
-		A PLACE
+		<span class="miblanco text-center">
+			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.a.length != 0}">
+				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.a.length != 0" alt="">
+			</span>
+			<span class="text-respuesta">
+				{{blanco.a}}
+			</span>
+		</span>
+		NOUN
 	</span>. 
 	
 	She was carrying a 
 
 	<span ng-click="selectType('b', 'adjectives')" data-toggle="modal" data-target="#myModal" class="blanco">
-		<span class="miblanco">{{blanco.b}}</span>
+		<span class="miblanco text-center">
+			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.b.length != 0}">
+				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.b.length != 0" alt="">
+			</span>
+			<span class="text-respuesta">
+				{{blanco.b}}
+			</span>
+		</span>
 		ADJECTIVE
 	</span>
 	 
 	 pile of 
 
 	<span ng-click="selectType('c', 'plural noun')" data-toggle="modal" data-target="#myModal" class="blanco">
-		<span class="miblanco">{{blanco.c}}</span>
+		<span class="miblanco text-center">
+			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.c.length != 0}">
+				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.c.length != 0" alt="">
+			</span>
+			<span class="text-respuesta">
+				{{blanco.c}}
+			</span>
+		</span>
 		PLURAL NOUN
 	</span> 
 
 	for me. When I saw it, I shouted “That is so 
 
 	<span ng-click="selectType('d', 'adjectives')" data-toggle="modal" data-target="#myModal" class="blanco">
-		<span class="miblanco">{{blanco.d}}</span>
+		<span class="miblanco text-center">
+			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.d.length != 0}">
+				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.d.length != 0" alt="">
+			</span>
+			<span class="text-respuesta">
+				{{blanco.d}}
+			</span>
+		</span>
 		ADJECTIVE
 	</span>
 
 	!” The mail carrier smiled 
 
 	<span ng-click="selectType('e', 'adverb')" data-toggle="modal" data-target="#myModal" class="blanco">
-		<span class="miblanco">{{blanco.e}}</span>
+		<span class="miblanco text-center">
+			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.e.length != 0}">
+				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.e.length != 0" alt="">
+			</span>
+			<span class="text-respuesta">
+				{{blanco.e}}
+			</span>
+		</span>
 		ADVERB
 	</span>
 
 	 at me. As soon as she left, I ran upstairs to tell my 
 
 	<span ng-click="selectType('f', 'living things')" data-toggle="modal" data-target="#myModal" class="blanco">
-		<span class="miblanco">{{blanco.f}}</span>
-		A LIVING THING
+		<span class="miblanco text-center">
+			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.f.length != 0}">
+				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.f.length != 0" alt="">
+			</span>
+			<span class="text-respuesta">
+				{{blanco.f}}
+			</span>
+		</span>
+		NOUN
 	</span>.
 </p>
+
+
+<div class="row" ng-if="completado">
+	<div class="col-xs-4 text-center">
+		<img src="img/congrats.png" width="100%" alt="">
+	</div>
+	<div class="col-xs-2 text-center">
+		<img src="img/btn.png" style="margin-top: 50px;" alt="">
+	</div>
+	<div class="col-xs-6 text-right">
+		<button class="btn btn-lg btn-default btn-more btn-with-symbol" style="margin-top:50px; padding: 0px 13px;">
+	    	Play again <i class="fa fa-arrow-right" aria-hidden="true"></i>
+	    </button>
+	</div>
+</div>
 
