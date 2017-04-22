@@ -178,3 +178,24 @@ body {
     margin: 19px;
 }
 
+
+.btn-default {
+    color: #009597;
+    background-color: #CEFFFB;
+    border-color: #009597;
+    box-shadow: 0 3px 0 #007273;
+    border-radius: 50px;
+    line-height: 54px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active {
+    background-color: #7cfff4;
+    color: #009597;
+    border-color: #009597;
+    box-shadow: 0 3px 0 #007273;
+    border-radius: 50px;
+}
+
+

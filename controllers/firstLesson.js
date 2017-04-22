@@ -2,7 +2,7 @@ angular.module('talesApp.firstLesson', ['ui.router'])
 
 .config(['$stateProvider', function ($stateProvider) {
 	$stateProvider.state('firstLesson', {
-		url: '/',
+		url: '/firstlesson',
 		templateUrl: 'templates/firstLesson.html',
 		controller: 'firstLessonCtrl'
 	})

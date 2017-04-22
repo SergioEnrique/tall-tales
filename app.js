@@ -1,5 +1,7 @@
 angular.module("talesApp", [
 	"talesApp.main",
+	"talesApp.home",
+	"talesApp.loading",
 	"talesApp.firstLesson"
 ])
 
