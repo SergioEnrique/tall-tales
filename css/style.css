@@ -198,4 +198,16 @@ body {
     border-radius: 50px;
 }
 
+.top-icons{
+    text-align: center;
+    height: 50px;
+    padding: 5px;
+}
 
+.btn-top{
+    font-size: 15px;
+    height: 36px;
+    width: 36px;
+    padding: 9px;
+    line-height: 0;
+}
