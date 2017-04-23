@@ -33,6 +33,15 @@ function (                $scope,   $http) {
 		isCompletado()
 	}
 
+	$scope.playAgain = function() {
+		$scope.completado = false
+		$scope.blanco = {a: '', b: '', c: '', d: '', e: '', f: ''}
+	}
+
+	$scope.listenTale = function() {
+		console.log('One day, the mail carrier visited my '+$scope.blanco.a+'. She was carrying a '+$scope.blanco.b+' pile of '+$scope.blanco.c+' for me. When I saw it, I shouted “That is so '+$scope.blanco.d+' !” The mail carrier smiled '+$scope.blanco.e+' at me. As soon as she left, I ran upstairs to tell my '+$scope.blanco.f+'.')
+	}
+
 	function isCompletado() {
 		if ($scope.blanco.a.length === 0)
 			return $scope.completado = false
