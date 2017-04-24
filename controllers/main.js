@@ -18,19 +18,8 @@ angular.module('talesApp.main', [])
           		d: null,
           		e: null,
           		f: null,
-              g: null,
-              h: null
-          	}
-
-            $scope.img = {
-          		a: null,
-          		b: null,
-          		c: null,
-          		d: null,
-          		e: null,
-          		f: null,
-              g: null,
-              h: null
+                g: null,
+                h: null
           	}
 
             $http.get('data/words.json')
@@ -43,9 +32,8 @@ angular.module('talesApp.main', [])
                 $scope.selectedWords = shuffleArray(words.find(x => x.type === type).words)
             }
 
-            $scope.selectWord = function(word, img) {
+            $scope.selectWord = function(word) {
                 $scope.blanco[blancoSelected] = word
-                $scope.img[blancoSelected] = img;
                 isCompletado()
             }
 
@@ -82,7 +70,7 @@ angular.module('talesApp.main', [])
 
                 for (var i in $scope.blanco) {
                     console.log(i, $scope.blanco)
-                    sentence = sentence.replace("BLANK", $scope.blanco[i])
+                    sentence = sentence.replace("BLANK", $scope.blanco[i].word)
                 }
 
                 var polly = new AWS.Polly({

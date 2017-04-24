@@ -10,10 +10,10 @@
 	<span ng-click="selectType('a', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
 		<span class="myblank text-center">
 			<span class="square" ng-class="{'square-choice-correct': blanco.a != null && blanco.a.valid, 'square-choice-incorrect': blanco.a != null && !blanco.a.valid}">
-				<img ng-src="img/promo-icon.png" class="square-choice-img"  ng-if="blanco.a != null" alt="">
+				<img ng-src="{{blanco.a.img}}" class="square-choice-img"  ng-if="blanco.a != null" alt="">
 			</span>
 			<span class="tale-answer" ng-class="{'tale-answer-correct': blanco.a != null && blanco.a.valid, 'tale-answer-incorrect': blanco.a != null && !blanco.a.valid}">
-				{{blanco.a}}
+				{{blanco.a.word}}
 			</span>
 		</span>
 		NOUN
@@ -24,10 +24,10 @@
 	<span ng-click="selectType('b', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
 		<span class="myblank text-center">
 			<span class="square" ng-class="{'square-choice-correct': blanco.b != null && blanco.b.valid, 'square-choice-incorrect': blanco.b != null && !blanco.b.valid}">
-				<img ng-src="{{img.b}}" class="square-choice-img" ng-if="blanco.b != null" alt="">
+				<img ng-src="{{blanco.b.img}}" class="square-choice-img" ng-if="blanco.b != null" alt="">
 			</span>
 			<span class="tale-answer" ng-class="{'tale-answer-correct': blanco.b != null && blanco.b.valid, 'tale-answer-incorrect': blanco.b != null && !blanco.b.valid}">
-				{{blanco.b}}
+				{{blanco.b.word}}
 			</span>
 		</span>
 		NOUN
@@ -38,10 +38,10 @@
 	<span ng-click="selectType('c', 'past verb')" data-toggle="modal" data-target="#myModal" class="blanco">
 		<span class="myblank text-center">
 			<span class="square" ng-class="{'square-choice-correct': blanco.c != null && blanco.c.valid, 'square-choice-incorrect': blanco.c != null && !blanco.c.valid}">
-				<img ng-src="{{img.c}}" class="square-choice-img" ng-if="blanco.c != null" alt="">
+				<img ng-src="{{blanco.c.img}}" class="square-choice-img" ng-if="blanco.c != null" alt="">
 			</span>
 			<span class="tale-answer" ng-class="{'tale-answer-correct': blanco.c != null && blanco.c.valid, 'tale-answer-incorrect': blanco.c != null && !blanco.c.valid}">
-				{{blanco.c}}
+				{{blanco.c.word}}
 			</span>
 		</span>
 		VERB
@@ -52,10 +52,10 @@
 	<span ng-click="selectType('d', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
 		<span class="myblank text-center">
 			<span class="square" ng-class="{'square-choice-correct': blanco.d != null && blanco.d.valid, 'square-choice-incorrect': blanco.d != null && !blanco.d.valid}">
-				<img ng-src="{{img.d}}" class="square-choice-img" ng-if="blanco.d != null" alt="">
+				<img ng-src="{{blanco.d.img}}" class="square-choice-img" ng-if="blanco.d != null" alt="">
 			</span>
 			<span class="tale-answer" ng-class="{'tale-answer-correct': blanco.d != null && blanco.d.valid, 'tale-answer-incorrect': blanco.d != null && !blanco.d.valid}">
-				{{blanco.d}}
+				{{blanco.d.word}}
 			</span>
 		</span>
 		NOUN
@@ -65,11 +65,11 @@
 
 	<span ng-click="selectType('e', 'adjectives')" data-toggle="modal" data-target="#myModal" class="blanco">
 		<span class="myblank text-center">
-			<span class="square" ng-class="{'tale-answer-correct': blanco.e != null && blanco.e.valid, 'tale-answer-incorrect': blanco.e != null && !blanco.e.valid}">
-				<img ng-src="{{img.e}}" class="square-choice-img" ng-if="blanco.e != null" alt="">
+			<span class="square" ng-class="{'square-choice-correct': blanco.e != null && blanco.e.valid, 'square-choice-incorrect': blanco.e != null && !blanco.e.valid}">
+				<img ng-src="{{blanco.e.img}}" class="square-choice-img" ng-if="blanco.e != null" alt="">
 			</span>
 			<span class="tale-answer" ng-class="{'tale-answer-correct': blanco.e != null && blanco.e.valid, 'tale-answer-incorrect': blanco.e != null && !blanco.e.valid}">
-				{{blanco.e}}
+				{{blanco.e.word}}
 			</span>
 		</span>
 		ADJECTIVE
@@ -79,11 +79,11 @@
 
 	<span ng-click="selectType('f', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
 		<span class="myblank text-center">
-			<span class="square" ng-class="{'tale-answer-correct': blanco.f != null && blanco.f.valid, 'tale-answer-incorrect': blanco.f != null && !blanco.f.valid}">
-				<img ng-src="{{img.f}}" class="square-choice-img" ng-if="blanco.f != null" alt="">
+			<span class="square" ng-class="{'square-choice-correct': blanco.f != null && blanco.f.valid, 'square-choice-incorrect': blanco.f != null && !blanco.f.valid}">
+				<img ng-src="{{blanco.f.img}}" class="square-choice-img" ng-if="blanco.f != null" alt="">
 			</span>
 			<span class="tale-answer" ng-class="{'tale-answer-correct': blanco.f != null && blanco.f.valid, 'tale-answer-incorrect': blanco.f != null && !blanco.f.valid}">
-				{{blanco.f}}
+				{{blanco.f.word}}
 			</span>
 		</span>
 		NOUN
@@ -93,11 +93,11 @@
 
    <span ng-click="selectType('g', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
 	   <span class="myblank text-center">
-		   <span class="square" ng-class="{'tale-answer-correct': blanco.g != null && blanco.g.valid, 'tale-answer-incorrect': blanco.g != null && !blanco.g.valid}">
-			   <img ng-src="{{img.g}}" class="square-choice-img" ng-if="blanco.g != null" alt="">
+		   <span class="square" ng-class="{'square-choice-correct': blanco.g != null && blanco.g.valid, 'square-choice-incorrect': blanco.g != null && !blanco.g.valid}">
+			   <img ng-src="{{blanco.g.img}}" class="square-choice-img" ng-if="blanco.g != null" alt="">
 		   </span>
 		   <span class="tale-answer" ng-class="{'tale-answer-correct': blanco.g != null && blanco.g.valid, 'tale-answer-incorrect': blanco.g != null && !blanco.g.valid}">
-			   {{blanco.g}}
+			   {{blanco.g.word}}
 		   </span>
 	   </span>
 	   NOUN
@@ -107,11 +107,11 @@
 
   <span ng-click="selectType('h', 'verb')" data-toggle="modal" data-target="#myModal" class="blanco">
 	  <span class="myblank text-center">
-		  <span class="square" ng-class="{'tale-answer-correct': blanco.h != null && blanco.h.valid, 'tale-answer-incorrect': blanco.h != null && !blanco.h.valid}">
-			  <img ng-src="{{img.h}}" class="square-choice-img" ng-if="blanco.h != null" alt="">
+		  <span class="square" ng-class="{'square-choice-correct': blanco.h != null && blanco.h.valid, 'square-choice-incorrect': blanco.h != null && !blanco.h.valid}">
+			  <img ng-src="{{blanco.h.img}}" class="square-choice-img" ng-if="blanco.h != null" alt="">
 		  </span>
 		  <span class="tale-answer" ng-class="{'tale-answer-correct': blanco.h != null && blanco.h.valid, 'tale-answer-incorrect': blanco.h != null && !blanco.h.valid}">
-			  {{blanco.h}}
+			  {{blanco.h.word}}
 		  </span>
 	  </span>
 	  VERB
