@@ -7,13 +7,13 @@
 <p class="ejercicio">
 	One day, the mail carrier visited my 
 
-	<span ng-click="selectType('a', 'place')" data-toggle="modal" data-target="#myModal" class="blanco">
+	<span ng-click="selectType('a', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
 		<span class="miblanco text-center">
-			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.a.length != 0}">
-				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.a.length != 0" alt="">
+			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.a != null && blanco.a.valid, 'cuadro-respuesta-rojo': blanco.a != null && !blanco.a.valid}">
+				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.a != null" alt="">
 			</span>
-			<span class="text-respuesta">
-				{{blanco.a}}
+			<span class="text-respuesta" ng-class="{'text-respuesta-verde': blanco.a != null && blanco.a.valid, 'text-respuesta-rojo': blanco.a != null && !blanco.a.valid}">
+				{{blanco.a.word}}
 			</span>
 		</span>
 		NOUN
@@ -23,11 +23,11 @@
 
 	<span ng-click="selectType('b', 'adjectives')" data-toggle="modal" data-target="#myModal" class="blanco">
 		<span class="miblanco text-center">
-			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.b.length != 0}">
-				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.b.length != 0" alt="">
+			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.b != null && blanco.b.valid, 'cuadro-respuesta-rojo': blanco.b != null && !blanco.b.valid}">
+				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.b != null" alt="">
 			</span>
-			<span class="text-respuesta">
-				{{blanco.b}}
+			<span class="text-respuesta" ng-class="{'text-respuesta-verde': blanco.b != null && blanco.b.valid, 'text-respuesta-rojo': blanco.b != null && !blanco.b.valid}">
+				{{blanco.b.word}}
 			</span>
 		</span>
 		ADJECTIVE
@@ -35,27 +35,27 @@
 	 
 	 pile of 
 
-	<span ng-click="selectType('c', 'plural noun')" data-toggle="modal" data-target="#myModal" class="blanco">
+	<span ng-click="selectType('c', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
 		<span class="miblanco text-center">
-			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.c.length != 0}">
-				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.c.length != 0" alt="">
+			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.c != null && blanco.c.valid, 'cuadro-respuesta-rojo': blanco.c != null && !blanco.c.valid}">
+				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.c != null" alt="">
 			</span>
-			<span class="text-respuesta">
-				{{blanco.c}}
+			<span class="text-respuesta" ng-class="{'text-respuesta-verde': blanco.c != null && blanco.c.valid, 'text-respuesta-rojo': blanco.c != null && !blanco.c.valid}">
+				{{blanco.c.word}}
 			</span>
 		</span>
-		PLURAL NOUN
+		NOUN
 	</span> 
 
 	for me. When I saw it, I shouted “That is so 
 
 	<span ng-click="selectType('d', 'adjectives')" data-toggle="modal" data-target="#myModal" class="blanco">
 		<span class="miblanco text-center">
-			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.d.length != 0}">
-				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.d.length != 0" alt="">
+			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.d != null && blanco.d.valid, 'cuadro-respuesta-rojo': blanco.d != null && !blanco.d.valid}">
+				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.d != null" alt="">
 			</span>
-			<span class="text-respuesta">
-				{{blanco.d}}
+			<span class="text-respuesta" ng-class="{'text-respuesta-verde': blanco.d != null && blanco.d.valid, 'text-respuesta-rojo': blanco.d != null && !blanco.d.valid}">
+				{{blanco.d.word}}
 			</span>
 		</span>
 		ADJECTIVE
@@ -63,27 +63,27 @@
 
 	!” The mail carrier smiled 
 
-	<span ng-click="selectType('e', 'adverb')" data-toggle="modal" data-target="#myModal" class="blanco">
+	<span ng-click="selectType('e', 'past verb')" data-toggle="modal" data-target="#myModal" class="blanco">
 		<span class="miblanco text-center">
-			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.e.length != 0}">
-				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.e.length != 0" alt="">
+			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.e != null && blanco.e.valid, 'cuadro-respuesta-rojo': blanco.e != null && !blanco.e.valid}">
+				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.e != null" alt="">
 			</span>
-			<span class="text-respuesta">
-				{{blanco.e}}
+			<span class="text-respuesta" ng-class="{'text-respuesta-verde': blanco.e != null && blanco.e.valid, 'text-respuesta-rojo': blanco.e != null && !blanco.e.valid}">
+				{{blanco.e.word}}
 			</span>
 		</span>
-		ADVERB
+		PAST VERB
 	</span>
 
 	 at me. As soon as she left, I ran upstairs to tell my 
 
-	<span ng-click="selectType('f', 'living things')" data-toggle="modal" data-target="#myModal" class="blanco">
+	<span ng-click="selectType('f', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
 		<span class="miblanco text-center">
-			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.f.length != 0}">
-				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.f.length != 0" alt="">
+			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.f != null && blanco.f.valid, 'cuadro-respuesta-rojo': blanco.f != null && !blanco.f.valid}">
+				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.f != null" alt="">
 			</span>
-			<span class="text-respuesta">
-				{{blanco.f}}
+			<span class="text-respuesta" ng-class="{'text-respuesta-verde': blanco.f != null && blanco.f.valid, 'text-respuesta-rojo': blanco.f != null && !blanco.f.valid}">
+				{{blanco.f.word}}
 			</span>
 		</span>
 		NOUN

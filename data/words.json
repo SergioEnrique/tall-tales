@@ -1,54 +1,78 @@
 [
     {
-        "type": "place",
+        "type": "noun",
         "words": [
             {
                 "pk": 1,
-                "word": "castle yard"
+                "valid": true,
+                "word": "egg",
+                "img": "img/sym/egg_insect.png"
             },
             {
                 "pk": 2,
-                "word": "prison"
+                "valid": true,
+                "word": "caterpillar",
+                "img": "img/sym/caterpillar.png"
             },
             {
                 "pk": 3,
-                "word": "cornfield"
+                "valid": true,
+                "word": "adult",
+                "img": "img/sym/adult_insect.png"
             },
             {
                 "pk": 4,
-                "word": "garbage pile"
+                "valid": true,
+                "word": "butterfly",
+                "img": "img/sym/butterfly.png"
             },
             {
                 "pk": 5,
-                "word": "chamber"
+                "valid": true,
+                "word": "milkweed",
+                "img": "img/sym/grass.png"
             },
             {
                 "pk": 6,
-                "word": "rooftop"
+                "valid": true,
+                "word": "baby",
+                "img": "img/sym/baby.png"
             },
             {
                 "pk": 7,
-                "word": "bathroom"
+                "valid": false,
+                "word": "small",
+                "img": "img/sym/small_size.png"
             },
             {
                 "pk": 8,
-                "word": "cafeteria"
+                "valid": false,
+                "word": "big",
+                "img": "img/sym/big.png"
             },
             {
                 "pk": 9,
-                "word": "seashore"
+                "valid": false,
+                "word": "purple",
+                "img": "img/sym/purple.png"
             },
             {
                 "pk": 10,
-                "word": "auction house"
+                "valid": false,
+                "word": "ate",
+                "img": "img/sym/to_eat.png"
             },
             {
                 "pk": 11,
-                "word": "toy store"
+                "valid": false,
+                "word": "grow",
+                "img": "img/sym/growth.png"
             },
             {
                 "pk": 12,
-                "word": "pasture"
+                "valid": false,
+                "word": "patriotic",
+                "img": "img/sym/patriotic.png"
             }
         ]
     },
@@ -57,210 +81,229 @@
         "words": [
             {
                 "pk": 1,
-                "word": "hysterical"
+                "valid": true,
+                "word": "small",
+                "img": "img/sym/small_size.png"
             },
             {
                 "pk": 2,
-                "word": "spidery"
+                "valid": true,
+                "word": "big",
+                "img": "img/sym/big.png"
             },
             {
                 "pk": 3,
-                "word": "sleepless"
+                "valid": false,
+                "word": "hippopotamus ",
+                "img": "img/sym/hippopotamus.png"
             },
             {
                 "pk": 4,
-                "word": "fractured"
+                "valid": false,
+                "word": "pickle",
+                "img": "img/sym/pickle.png"
             },
             {
                 "pk": 5,
-                "word": "benighted"
+                "valid": false,
+                "word": "guacamole",
+                "img": "img/sym/guacamole.png"
             },
             {
                 "pk": 6,
-                "word": "proven"
+                "valid": false,
+                "word": "climbed",
+                "img": "img/sym/to_climb.png"
             },
             {
                 "pk": 7,
-                "word": "barbed"
+                "valid": false,
+                "word": "played",
+                "img": "img/promo-icon.png"
             },
             {
                 "pk": 8,
-                "word": "sacrificed"
+                "valid": false,
+                "word": "swam",
+                "img": "img/sym/to_swim.png"
             },
             {
                 "pk": 9,
-                "word": "disreputable"
+                "valid": false,
+                "word": "danced",
+                "img": "img/sym/dance.png"
             },
             {
                 "pk": 10,
-                "word": "rancid"
+                "valid": false,
+                "word": "wanted",
+                "img": "img/sym/to_want.png"
             },
             {
                 "pk": 11,
-                "word": "unspoken"
+                "valid": false,
+                "word": "skied",
+                "img": "img/sym/to_ski.png"
             },
             {
                 "pk": 12,
-                "word": "stunned"
+                "valid": false,
+                "word": "sang",
+                "img": "img/sym/to_sing.png"
             }
         ]
     },
     {
-        "type": "plural noun",
+        "type": "past verb",
         "words": [
             {
                 "pk": 1,
-                "word": "apples"
+                "valid": true,
+                "word": "ate",
+                "img": "img/sym/to_eat.png"
             },
             {
                 "pk": 2,
-                "word": "balls"
+                "valid": true,
+                "word": "grew",
+                "img": "img/sym/growth.png"
             },
             {
                 "pk": 3,
-                "word": "frogs"
+                "valid": true,
+                "word": "flew",
+                "img": "img/sym/flying_kite.png"
             },
             {
                 "pk": 4,
-                "word": "plates"
+                "valid": false,
+                "word": "hippopotamus ",
+                "img": "img/sym/hippopotamus.png"
             },
             {
                 "pk": 5,
-                "word": "books"
+                "valid": false,
+                "word": "pickle",
+                "img": "img/sym/pickle.png"
             },
             {
                 "pk": 6,
-                "word": "tress"
+                "valid": false,
+                "word": "guacamole",
+                "img": "img/sym/guacamole.png"
             },
             {
                 "pk": 7,
-                "word": "cats"
+                "valid": false,
+                "word": "purple",
+                "img": "img/sym/purple.png"
             },
             {
                 "pk": 8,
-                "word": "turtles"
+                "valid": false,
+                "word": "patriotic",
+                "img": "img/sym/patriotic.png"
             },
             {
                 "pk": 9,
-                "word": "disreputable"
+                "valid": false,
+                "word": "snowy",
+                "img": "img/sym/snowy.png"
             },
             {
                 "pk": 10,
-                "word": "pencils"
+                "valid": false,
+                "word": "super",
+                "img": "img/sym/super.png"
             },
             {
                 "pk": 11,
-                "word": "keys"
+                "valid": false,
+                "word": "tired",
+                "img": "img/sym/tired.png"
             },
             {
                 "pk": 12,
-                "word": "tomatoes"
+                "valid": false,
+                "word": "adult",
+                "img": "img/sym/adult.png"
             }
         ]
     },
     {
-        "type": "adverb",
+        "type": "verb",
         "words": [
             {
                 "pk": 1,
-                "word": "badly"
+                "valid": true,
+                "word": "eat",
+                "img": "img/sym/to_eat.png"
             },
             {
                 "pk": 2,
-                "word": "coyly"
+                "valid": true,
+                "word": "grow",
+                "img": "img/sym/growth.png"
             },
             {
                 "pk": 3,
-                "word": "daily"
+                "valid": true,
+                "word": "fly",
+                "img": "img/sym/flying_kite.png"
             },
             {
                 "pk": 4,
-                "word": "duely"
+                "valid": false,
+                "word": "hippopotamus ",
+                "img": "img/sym/hippopotamus.png"
             },
             {
                 "pk": 5,
-                "word": "fully"
+                "valid": false,
+                "word": "pickle",
+                "img": "img/sym/pickle.png"
             },
             {
                 "pk": 6,
-                "word": "lower"
+                "valid": false,
+                "word": "guacamole",
+                "img": "img/sym/guacamole.png"
             },
             {
                 "pk": 7,
-                "word": "madly"
+                "valid": false,
+                "word": "purple",
+                "img": "img/sym/purple.png"
             },
             {
                 "pk": 8,
-                "word": "twice"
+                "valid": false,
+                "word": "patriotic",
+                "img": "img/sym/patriotic.png"
             },
             {
                 "pk": 9,
-                "word": "openly"
+                "valid": false,
+                "word": "snowy",
+                "img": "img/sym/snowy.png"
             },
             {
                 "pk": 10,
-                "word": "agedly"
+                "valid": false,
+                "word": "super",
+                "img": "img/sym/super.png"
             },
             {
                 "pk": 11,
-                "word": "coldly"
+                "valid": false,
+                "word": "tired",
+                "img": "img/sym/tired.png"
             },
             {
                 "pk": 12,
-                "word": "dearly"
-            }
-        ]
-    },
-    {
-        "type": "living things",
-        "words": [
-            {
-                "pk": 1,
-                "word": "angel"
-            },
-            {
-                "pk": 2,
-                "word": "banshee"
-            },
-            {
-                "pk": 3,
-                "word": "bogey man"
-            },
-            {
-                "pk": 4,
-                "word": "cyclops"
-            },
-            {
-                "pk": 5,
-                "word": "batman"
-            },
-            {
-                "pk": 6,
-                "word": "fairy"
-            },
-            {
-                "pk": 7,
-                "word": "ghost"
-            },
-            {
-                "pk": 8,
-                "word": "Godzilla"
-            },
-            {
-                "pk": 9,
-                "word": "mermaid"
-            },
-            {
-                "pk": 10,
-                "word": "zombie"
-            },
-            {
-                "pk": 11,
-                "word": "rain bird"
-            },
-            {
-                "pk": 12,
-                "word": "werewolf"
+                "valid": false,
+                "word": "adult",
+                "img": "img/sym/adult.png"
             }
         ]
     }

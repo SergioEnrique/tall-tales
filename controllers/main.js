@@ -10,12 +10,12 @@ function (                $scope,   $http) {
 
 	$scope.selectedWords = []
 	$scope.blanco = {
-		a: '',
-		b: '',
-		c: '',
-		d: '',
-		e: '',
-		f: ''
+		a: null,
+		b: null,
+		c: null,
+		d: null,
+		e: null,
+		f: null
 	}
 
 	$http.get('data/words.json')
@@ -25,7 +25,7 @@ function (                $scope,   $http) {
 
 	$scope.selectType = function(blanco, type) {
 		blancoSelected = blanco
-		$scope.selectedWords = words.find(x => x.type === type).words
+		$scope.selectedWords = shuffleArray(words.find(x => x.type === type).words)
 	}
 
 	$scope.selectWord = function(word) {
@@ -35,28 +35,38 @@ function (                $scope,   $http) {
 
 	$scope.playAgain = function() {
 		$scope.completado = false
-		$scope.blanco = {a: '', b: '', c: '', d: '', e: '', f: ''}
+		$scope.blanco = {a: null, b: null, c: null, d: null, e: null, f: null}
 	}
 
 	$scope.listenTale = function() {
-		console.log('One day, the mail carrier visited my '+$scope.blanco.a+'. She was carrying a '+$scope.blanco.b+' pile of '+$scope.blanco.c+' for me. When I saw it, I shouted “That is so '+$scope.blanco.d+' !” The mail carrier smiled '+$scope.blanco.e+' at me. As soon as she left, I ran upstairs to tell my '+$scope.blanco.f+'.')
+		console.log('One day, the mail carrier visited my '+$scope.blanco.a.word+'. She was carrying a '+$scope.blanco.b.word+' pile of '+$scope.blanco.c.word+' for me. When I saw it, I shouted “That is so '+$scope.blanco.d.word+' !” The mail carrier smiled '+$scope.blanco.e.word+' at me. As soon as she left, I ran upstairs to tell my '+$scope.blanco.f.word+'.')
 	}
 
 	function isCompletado() {
-		if ($scope.blanco.a.length === 0)
+		if ($scope.blanco.a === null)
 			return $scope.completado = false
-		else if ($scope.blanco.b.length === 0)
+		else if ($scope.blanco.b === null)
 			return $scope.completado = false
-		else if ($scope.blanco.c.length === 0)
+		else if ($scope.blanco.c === null)
 			return $scope.completado = false
-		else if ($scope.blanco.d.length === 0)
+		else if ($scope.blanco.d === null)
 			return $scope.completado = false
-		else if ($scope.blanco.e.length === 0)
+		else if ($scope.blanco.e === null)
 			return $scope.completado = false
-		else if ($scope.blanco.f.length === 0)
+		else if ($scope.blanco.f === null)
 			return $scope.completado = false
 		else
 			return $scope.completado = true
+	}
+
+	function shuffleArray(array) {
+	    for (var i = array.length - 1; i > 0; i--) {
+	        var j = Math.floor(Math.random() * (i + 1));
+	        var temp = array[i];
+	        array[i] = array[j];
+	        array[j] = temp;
+	    }
+	    return array;
 	}
 
 }])
