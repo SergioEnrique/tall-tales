@@ -15,15 +15,15 @@
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">Brand</a>
+				<img class="sa-logo" src="img/logo-sa-bubble.png" alt="">
 			</div>
 
 			<div class="top-icons">
-				<button class="btn btn-lg btn-default btn-more btn-top">
-			    	<i class="fa fa-pause" aria-hidden="true"></i>
+				<button class="btn btn-lg btn-default btn-more btn-top" ng-click="soundPlay()">
+			    	<i class="fa fa-play" aria-hidden="true"></i>
 			    </button>
-			    <button class="btn btn-lg btn-default btn-more btn-top">
-			    	<i class="fa fa-volume-off" aria-hidden="true"></i>
+			    <button class="btn btn-lg btn-default btn-more btn-top" ng-click="soundPlay()">
+			    	<i class="fa fa-volume-up" aria-hidden="true"></i>
 			    </button>
 			    <button class="btn btn-lg btn-default btn-more btn-top">
 			    	<i class="fa fa-question" aria-hidden="true"></i>
@@ -41,17 +41,18 @@
 				<li class="sidebar-brand">
 					<a href="#">
 						<img class="wrapper-logo" src="img/tt.png" alt="">
+						<h4 style="margin-left:24%;">Tall Tales</h4>
 					</a>
 				</li>
 				<li>
-					<a href="#">Link</a>
+					<a href="#"style="margin-left:5%;font-size:22px;font-style:italic;">The Egg That Grew</a>
 				</li>
 			</ul>
 		</div>
 		<!-- /#sidebar-wrapper -->
 
 		<!-- Page Content -->
-		<div id="page-content-wrapper">
+		<div id="page-content-wrapper"><br /><br />
 			<div class="container-game" ui-view></div>
 		</div>
 		<!-- /#page-content-wrapper -->
@@ -71,11 +72,11 @@
 				</div>
 				<div class="modal-body">
 					<div class="row">
-						<div class="col-xs-3 text-center" ng-repeat="word in selectedWords" data-dismiss="modal" ng-click="selectWord(word)">
-							<span class="cuadro-eleccion">
-								
+						<div class="col-xs-3 text-center" ng-repeat="word in selectedWords" data-dismiss="modal" ng-click="selectWord(word.word, word.img)">
+							<span class="square-choice">
+				 			   <img ng-src="{{word.img}}" class="square-choice-img" style="margin:0">
 							</span>
-							<span class="texto-eleccion">{{word.word}}</span>
+							<span class="text-choice">{{word.word}}</span>
 						</div>
 					</div>
 				</div>
@@ -86,6 +87,7 @@
 	<!-- Other dependencies -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.39.0.min.js"></script>
 
 	<!-- Angular dependencies -->
 	<script src="bower_components/angular/angular.min.js"></script>

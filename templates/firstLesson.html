@@ -1,93 +1,121 @@
 <div class="text-center">
-	<h1>The Mail Carrier Tall Tale</h1>
+	<h1>The Egg That Grew</h1>
 </div>
 
-<br>
+<br /><br />
 
-<p class="ejercicio">
-	One day, the mail carrier visited my 
+<p class="tales-box">
+	There once was a tiny
 
 	<span ng-click="selectType('a', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
-		<span class="miblanco text-center">
-			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.a != null && blanco.a.valid, 'cuadro-respuesta-rojo': blanco.a != null && !blanco.a.valid}">
-				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.a != null" alt="">
+		<span class="myblank text-center">
+			<span class="square" ng-class="{'square-choice-correct': blanco.a != null && blanco.a.valid, 'square-choice-incorrect': blanco.a != null && !blanco.a.valid}">
+				<img ng-src="img/promo-icon.png" class="square-choice-img"  ng-if="blanco.a != null" alt="">
 			</span>
-			<span class="text-respuesta" ng-class="{'text-respuesta-verde': blanco.a != null && blanco.a.valid, 'text-respuesta-rojo': blanco.a != null && !blanco.a.valid}">
-				{{blanco.a.word}}
-			</span>
-		</span>
-		NOUN
-	</span>. 
-	
-	She was carrying a 
-
-	<span ng-click="selectType('b', 'adjectives')" data-toggle="modal" data-target="#myModal" class="blanco">
-		<span class="miblanco text-center">
-			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.b != null && blanco.b.valid, 'cuadro-respuesta-rojo': blanco.b != null && !blanco.b.valid}">
-				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.b != null" alt="">
-			</span>
-			<span class="text-respuesta" ng-class="{'text-respuesta-verde': blanco.b != null && blanco.b.valid, 'text-respuesta-rojo': blanco.b != null && !blanco.b.valid}">
-				{{blanco.b.word}}
-			</span>
-		</span>
-		ADJECTIVE
-	</span>
-	 
-	 pile of 
-
-	<span ng-click="selectType('c', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
-		<span class="miblanco text-center">
-			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.c != null && blanco.c.valid, 'cuadro-respuesta-rojo': blanco.c != null && !blanco.c.valid}">
-				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.c != null" alt="">
-			</span>
-			<span class="text-respuesta" ng-class="{'text-respuesta-verde': blanco.c != null && blanco.c.valid, 'text-respuesta-rojo': blanco.c != null && !blanco.c.valid}">
-				{{blanco.c.word}}
-			</span>
-		</span>
-		NOUN
-	</span> 
-
-	for me. When I saw it, I shouted “That is so 
-
-	<span ng-click="selectType('d', 'adjectives')" data-toggle="modal" data-target="#myModal" class="blanco">
-		<span class="miblanco text-center">
-			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.d != null && blanco.d.valid, 'cuadro-respuesta-rojo': blanco.d != null && !blanco.d.valid}">
-				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.d != null" alt="">
-			</span>
-			<span class="text-respuesta" ng-class="{'text-respuesta-verde': blanco.d != null && blanco.d.valid, 'text-respuesta-rojo': blanco.d != null && !blanco.d.valid}">
-				{{blanco.d.word}}
-			</span>
-		</span>
-		ADJECTIVE
-	</span>
-
-	!” The mail carrier smiled 
-
-	<span ng-click="selectType('e', 'past verb')" data-toggle="modal" data-target="#myModal" class="blanco">
-		<span class="miblanco text-center">
-			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.e != null && blanco.e.valid, 'cuadro-respuesta-rojo': blanco.e != null && !blanco.e.valid}">
-				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.e != null" alt="">
-			</span>
-			<span class="text-respuesta" ng-class="{'text-respuesta-verde': blanco.e != null && blanco.e.valid, 'text-respuesta-rojo': blanco.e != null && !blanco.e.valid}">
-				{{blanco.e.word}}
-			</span>
-		</span>
-		PAST VERB
-	</span>
-
-	 at me. As soon as she left, I ran upstairs to tell my 
-
-	<span ng-click="selectType('f', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
-		<span class="miblanco text-center">
-			<span class="cuadro-respuesta" ng-class="{'cuadro-respuesta-verde': blanco.f != null && blanco.f.valid, 'cuadro-respuesta-rojo': blanco.f != null && !blanco.f.valid}">
-				<img src="img/promo-icon.png" class="cuadro-respuesta-imagen" ng-if="blanco.f != null" alt="">
-			</span>
-			<span class="text-respuesta" ng-class="{'text-respuesta-verde': blanco.f != null && blanco.f.valid, 'text-respuesta-rojo': blanco.f != null && !blanco.f.valid}">
-				{{blanco.f.word}}
+			<span class="tale-answer" ng-class="{'tale-answer-correct': blanco.a != null && blanco.a.valid, 'tale-answer-incorrect': blanco.a != null && !blanco.a.valid}">
+				{{blanco.a}}
 			</span>
 		</span>
 		NOUN
 	</span>.
+
+	Soon a
+
+	<span ng-click="selectType('b', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
+		<span class="myblank text-center">
+			<span class="square" ng-class="{'square-choice-correct': blanco.b != null && blanco.b.valid, 'square-choice-incorrect': blanco.b != null && !blanco.b.valid}">
+				<img ng-src="{{img.b}}" class="square-choice-img" ng-if="blanco.b != null" alt="">
+			</span>
+			<span class="tale-answer" ng-class="{'tale-answer-correct': blanco.b != null && blanco.b.valid, 'tale-answer-incorrect': blanco.b != null && !blanco.b.valid}">
+				{{blanco.b}}
+			</span>
+		</span>
+		NOUN
+	</span>
+
+	 came out. It
+
+	<span ng-click="selectType('c', 'past verb')" data-toggle="modal" data-target="#myModal" class="blanco">
+		<span class="myblank text-center">
+			<span class="square" ng-class="{'square-choice-correct': blanco.c != null && blanco.c.valid, 'square-choice-incorrect': blanco.c != null && !blanco.c.valid}">
+				<img ng-src="{{img.c}}" class="square-choice-img" ng-if="blanco.c != null" alt="">
+			</span>
+			<span class="tale-answer" ng-class="{'tale-answer-correct': blanco.c != null && blanco.c.valid, 'tale-answer-incorrect': blanco.c != null && !blanco.c.valid}">
+				{{blanco.c}}
+			</span>
+		</span>
+		VERB
+	</span>
+
+	lots of
+
+	<span ng-click="selectType('d', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
+		<span class="myblank text-center">
+			<span class="square" ng-class="{'square-choice-correct': blanco.d != null && blanco.d.valid, 'square-choice-incorrect': blanco.d != null && !blanco.d.valid}">
+				<img ng-src="{{img.d}}" class="square-choice-img" ng-if="blanco.d != null" alt="">
+			</span>
+			<span class="tale-answer" ng-class="{'tale-answer-correct': blanco.d != null && blanco.d.valid, 'tale-answer-incorrect': blanco.d != null && !blanco.d.valid}">
+				{{blanco.d}}
+			</span>
+		</span>
+		NOUN
+	</span>.
+
+	It quickly became
+
+	<span ng-click="selectType('e', 'adjectives')" data-toggle="modal" data-target="#myModal" class="blanco">
+		<span class="myblank text-center">
+			<span class="square" ng-class="{'tale-answer-correct': blanco.e != null && blanco.e.valid, 'tale-answer-incorrect': blanco.e != null && !blanco.e.valid}">
+				<img ng-src="{{img.e}}" class="square-choice-img" ng-if="blanco.e != null" alt="">
+			</span>
+			<span class="tale-answer" ng-class="{'tale-answer-correct': blanco.e != null && blanco.e.valid, 'tale-answer-incorrect': blanco.e != null && !blanco.e.valid}">
+				{{blanco.e}}
+			</span>
+		</span>
+		ADJECTIVE
+	</span>.
+
+	 Then it formed a
+
+	<span ng-click="selectType('f', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
+		<span class="myblank text-center">
+			<span class="square" ng-class="{'tale-answer-correct': blanco.f != null && blanco.f.valid, 'tale-answer-incorrect': blanco.f != null && !blanco.f.valid}">
+				<img ng-src="{{img.f}}" class="square-choice-img" ng-if="blanco.f != null" alt="">
+			</span>
+			<span class="tale-answer" ng-class="{'tale-answer-correct': blanco.f != null && blanco.f.valid, 'tale-answer-incorrect': blanco.f != null && !blanco.f.valid}">
+				{{blanco.f}}
+			</span>
+		</span>
+		NOUN
+	</span>.
+
+	Next, it turned into a
+
+   <span ng-click="selectType('g', 'noun')" data-toggle="modal" data-target="#myModal" class="blanco">
+	   <span class="myblank text-center">
+		   <span class="square" ng-class="{'tale-answer-correct': blanco.g != null && blanco.g.valid, 'tale-answer-incorrect': blanco.g != null && !blanco.g.valid}">
+			   <img ng-src="{{img.g}}" class="square-choice-img" ng-if="blanco.g != null" alt="">
+		   </span>
+		   <span class="tale-answer" ng-class="{'tale-answer-correct': blanco.g != null && blanco.g.valid, 'tale-answer-incorrect': blanco.g != null && !blanco.g.valid}">
+			   {{blanco.g}}
+		   </span>
+	   </span>
+	   NOUN
+   </span>.
+
+   In four hours it could
+
+  <span ng-click="selectType('h', 'verb')" data-toggle="modal" data-target="#myModal" class="blanco">
+	  <span class="myblank text-center">
+		  <span class="square" ng-class="{'tale-answer-correct': blanco.h != null && blanco.h.valid, 'tale-answer-incorrect': blanco.h != null && !blanco.h.valid}">
+			  <img ng-src="{{img.h}}" class="square-choice-img" ng-if="blanco.h != null" alt="">
+		  </span>
+		  <span class="tale-answer" ng-class="{'tale-answer-correct': blanco.h != null && blanco.h.valid, 'tale-answer-incorrect': blanco.h != null && !blanco.h.valid}">
+			  {{blanco.h}}
+		  </span>
+	  </span>
+	  VERB
+  </span>!
 </p>
 
 
@@ -96,7 +124,7 @@
 		<img src="img/congrats.png" width="100%" alt="">
 	</div>
 	<div class="col-xs-2 text-center">
-		<img src="img/btn.png" style="margin-top: 50px; cursor:pointer;" alt="" ng-click="listenTale()">
+		<img ng-click="soundPlay()" src="img/btn.png" style="margin-top: 50px;" alt="">
 	</div>
 	<div class="col-xs-6 text-right">
 		<button class="btn btn-lg btn-default btn-more btn-with-symbol" style="margin-top:50px; padding: 0px 13px;" ng-click="playAgain()">
@@ -104,4 +132,3 @@
 	    </button>
 	</div>
 </div>
-
